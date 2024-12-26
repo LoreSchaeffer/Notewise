@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 682 800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #527cbc;
+      }
+
+      .cls-2 {
+        fill: #cdcdcd;
+      }
+
+      .cls-3 {
+        fill: #3a3e98;
+      }
+
+      .cls-4 {
+        fill: #fdb808;
+      }
+
+      .cls-5 {
+        fill: #212121;
+      }
+
+      .cls-6 {
+        fill: #6fa8ff;
+      }
+
+      .cls-7 {
+        fill: #c59d84;
+      }
+
+      .cls-8 {
+        fill: #d04b56;
+      }
+    </style>
+  </defs>
+  <g id="Livello_1">
+    <path class="cls-1" d="M682,772.41c0,15.24-13.43,27.59-30,27.59H85.15c-18.31,0-33.15-14.84-33.15-33.15V32.58C52,14.59,66.59,0,84.58,0h567.42c16.57,0,30,12.35,30,27.59v744.83Z"/>
+    <path class="cls-3" d="M187,800h-107.39c-16.91,0-30.61-13.71-30.61-30.61V30.05C49,13.45,62.45,0,79.05,0h107.95v800Z"/>
+    <rect class="cls-6" x="262" y="91" width="345" height="87" rx="23.47" ry="23.47"/>
+    <rect x="262" y="302" width="308" height="16" rx="8" ry="8"/>
+    <rect x="262" y="394" width="212" height="16" rx="8" ry="8"/>
+  </g>
+  <g id="Livello_2">
+    <path class="cls-4" d="M656.05,292.61l-237.75,411.79-35.51-20.5,237.75-411.79c5.66-9.8,18.2-13.16,28-7.5,9.8,5.66,13.16,18.2,7.5,28Z"/>
+    <path class="cls-5" d="M382.79,683.9l-12.43,49.3c-1.69,6.71,6.48,11.44,11.45,6.61l36.48-35.41-35.51-20.5Z"/>
+    <path class="cls-8" d="M620.25,242.18h38.34c11.31,0,20.5,9.19,20.5,20.5h0c0,11.31-9.19,20.5-20.5,20.5h-38.34v-41h0Z" transform="translate(97.35 693.97) rotate(-60)"/>
+    <polygon class="cls-7" points="374.38 717.28 393.6 728.37 418.3 704.4 382.79 683.9 374.38 717.28"/>
+  </g>
+  <g id="Livello_3">
+    <rect class="cls-2" y="383" width="99" height="34" rx="17" ry="17"/>
+    <rect class="cls-2" y="133" width="99" height="34" rx="17" ry="17"/>
+    <rect class="cls-2" y="633" width="99" height="34" rx="17" ry="17"/>
+  </g>
+</svg>

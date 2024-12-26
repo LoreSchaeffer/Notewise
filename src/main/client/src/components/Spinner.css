@@ -1,0 +1,149 @@
+.spinner {
+    margin: 5px;
+}
+
+.spinner .circle {
+    -webkit-animation: rotator 1.4s linear infinite;
+    animation: rotator 1.4s linear infinite;
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes rotator {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes rotator {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+.spinner-path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    -webkit-animation: dash 1.4s ease-in-out infinite;
+    animation: dash 1.4s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors {
+    0% {
+        stroke: #4285F4;
+    }
+    25% {
+        stroke: #DE3E35;
+    }
+    50% {
+        stroke: #F7C223;
+    }
+    75% {
+        stroke: #1B9A59;
+    }
+    100% {
+        stroke: #4285F4;
+    }
+}
+
+@keyframes colors {
+    0% {
+        stroke: var(--blue);
+    }
+    25% {
+        stroke: var(--red);
+    }
+    50% {
+        stroke: var(--yellow);
+    }
+    75% {
+        stroke: var(--green);
+    }
+    100% {
+        stroke: var(--blue);
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        transform: rotate(450deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        transform: rotate(450deg);
+    }
+}
+
+.spinner-primary .spinner-path {
+    stroke: var(--primary);
+}
+
+.spinner-primary-variant .spinner-path {
+    stroke: var(--primary-variant);
+}
+
+.spinner-error .spinner-path {
+    stroke: var(--error);
+}
+
+.spinner-error-variant .spinner-path {
+    stroke: var(--error-variant);
+}
+
+.spinner-warning .spinner-path {
+    stroke: var(--warning);
+}
+
+.spinner-warning-variant .spinner-path {
+    stroke: var(--warning-variant);
+}
+
+.spinner-success .spinner-path {
+    stroke: var(--success);
+}
+
+.spinner-success-variant .spinner-path {
+    stroke: var(--success-variant);
+}
+
+.spinner-white .spinner-path {
+    stroke: #ffffff;
+}
+
+.spinner-black .spinner-path {
+    stroke: #000000;
+}
+
+.spinner-gray .spinner-path {
+    stroke: var(--gray-900);
+}
+
+.spinner-rgb .spinner-path {
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+    animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}

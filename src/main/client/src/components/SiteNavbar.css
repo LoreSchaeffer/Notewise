@@ -1,0 +1,80 @@
+.navbar {
+    height: var(--navbar-height);
+    background-color: var(--02dp);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.8em;
+    padding: 0 20px;
+    z-index: 500;
+}
+
+.nav-brand {
+    display: block;
+    height: 75%;
+}
+
+.navbar nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav ul {
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    height: 85%;
+}
+
+.nav-link a {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.nav-link:hover {
+    background-color: var(--08dp);
+}
+
+.nav-link.active {
+    background-color: rgba(var(--primary-variant-rgb), 0.2);
+}
+
+.nav-link.active:hover {
+    background-color: rgba(var(--primary-variant-rgb), 0.5);
+}
+
+.nav-right {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+.nav-avatar {
+    height: 75%;
+    padding: 0;
+    background-color: var(--primary);
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    cursor: pointer;
+}
+
+.nav-avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-avatar:hover {
+    background-color: var(--blue-100);
+    border-color: var(--blue-100);
+}

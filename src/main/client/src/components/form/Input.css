@@ -1,0 +1,60 @@
+.input-container {
+    position: relative;
+    margin: 16px 0 0 0;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field {
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid var(--gray-500);
+    border-radius: 5px;
+    padding: 1rem 0.7rem;
+    color: var(--text-color);
+    transition: 0.1s ease-out;
+    background-color: transparent;
+}
+
+.input-label {
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--0dp); /* This should inherit the background color of the input field */
+    color: var(--gray-400);
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: .1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+}
+
+.input-field:focus {
+    border-color: var(--primary);
+}
+
+.input-field:focus + label {
+    color: var(--primary);
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+    background-color: var(--0dp); /* This should inherit the background color of the input field */
+}
+
+.input-field:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+}
+
+.input-field:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.input-field:disabled + label {
+    opacity: 0.5;
+}

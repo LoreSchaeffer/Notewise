@@ -1,0 +1,240 @@
+.btn {
+    height: 40px;
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--24dp);
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    -webkit-appearance: button;
+    text-transform: none;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden;
+    transition: background 400ms;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--on-primary);
+}
+
+.btn-primary svg {
+    fill: var(--on-primary);
+}
+
+.btn-outline.btn-primary {
+    color: var(--primary);
+}
+
+.btn-outline.btn-primary svg {
+    fill: var(--primary);
+}
+
+.btn-outline.btn-primary:hover {
+    background-color: rgba(var(--primary-rgb), 0.2);
+}
+
+.btn-primary-variant {
+    background-color: var(--primary-variant);
+    color: var(--on-primary-variant);
+}
+
+.btn-primary-variant svg {
+    fill: var(--on-primary-variant);
+}
+
+.btn-outline.btn-primary-variant {
+    color: var(--primary);
+}
+
+.btn-outline.btn-primary-variant svg {
+    fill: var(--primary);
+}
+
+.btn-outline.btn-primary-variant:hover {
+    background-color: rgba(var(--primary-variant-rgb), 0.2);
+}
+
+.btn-error {
+    background-color: var(--error);
+    color: var(--on-error);
+}
+
+.btn-error svg {
+    fill: var(--on-error);
+}
+
+.btn-outline.btn-error {
+    color: var(--error);
+}
+
+.btn-outline.btn-error svg {
+    fill: var(--error);
+}
+
+.btn-outline.btn-error:hover {
+    background-color: rgba(var(--error-rgb), 0.2);
+}
+
+.btn-error-variant {
+    background-color: var(--error-variant);
+    color: var(--on-error-variant);
+}
+
+.btn-error-variant svg {
+    fill: var(--on-error-variant);
+}
+
+.btn-outline.btn-error-variant {
+    color: var(--error);
+}
+
+.btn-outline.btn-error-variant svg {
+    fill: var(--error);
+}
+
+.btn-outline.btn-error-variant:hover {
+    background-color: rgba(var(--error-variant-rgb), 0.2);
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    color: var(--on-warning);
+}
+
+.btn-warning svg {
+    fill: var(--on-warning);
+}
+
+.btn-outline.btn-warning {
+    color: var(--warning);
+}
+
+.btn-outline.btn-warning svg {
+    fill: var(--warning);
+}
+
+.btn-outline.btn-warning:hover {
+    background-color: rgba(var(--warning-rgb), 0.2);
+}
+
+.btn-warning-variant {
+    background-color: var(--warning-variant);
+    color: var(--on-warning-variant);
+}
+
+.btn-warning-variant svg {
+    fill: var(--on-warning-variant);
+}
+
+.btn-outline.btn-warning-variant {
+    color: var(--warning);
+}
+
+.btn-outline.btn-warning-variant svg {
+    fill: var(--warning);
+}
+
+.btn-outline.btn-warning-variant:hover {
+    background-color: rgba(var(--warning-variant-rgb), 0.2);
+}
+
+.btn-success {
+    background-color: var(--success);
+    color: var(--on-success);
+}
+
+.btn-success svg {
+    fill: var(--on-success);
+}
+
+.btn-outline.btn-success {
+    color: var(--success);
+}
+
+.btn-outline.btn-success svg {
+    fill: var(--success);
+}
+
+.btn-outline.btn-success:hover {
+    background-color: rgba(var(--success-rgb), 0.2);
+}
+
+.btn-success-variant {
+    background-color: var(--success-variant);
+    color: var(--on-success-variant);
+}
+
+.btn-success-variant svg {
+    fill: var(--on-success-variant);
+}
+
+.btn-outline.btn-success-variant {
+    color: var(--success);
+}
+
+.btn-outline.btn-success-variant svg {
+    fill: var(--success);
+}
+
+.btn-outline.btn-success-variant:hover {
+    background-color: rgba(var(--success-variant-rgb), 0.2);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transition: filter 100ms ease-in-out;
+    z-index: -1;
+}
+
+.btn:hover::before,
+.btn:focus::before {
+    filter: brightness(1.1);
+}
+
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+    box-shadow: none;
+    color: var(--gray-400);
+}
+
+.btn:disabled::before,
+.btn:disabled::before {
+    filter: none;
+}
+
+.btn-outline {
+    border: 2px solid var(--gray-500);
+    background-color: transparent;
+}
+
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}

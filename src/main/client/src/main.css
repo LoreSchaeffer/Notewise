@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: local('/fonts/NotoSans-VariableFont_wdth,wght.ttf')
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: italic;
+    src: local('/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf')
+}
+
+:root {
+    /* Yellow */
+    --yellow-50: hsl(46, 100%, 94%);
+    --yellow-100: hsl(45, 100%, 85%);
+    --yellow-200: hsl(45, 100%, 75%);
+    --yellow-300: hsl(46, 100%, 65%);
+    --yellow-400: hsl(45, 100%, 58%);
+    --yellow-500: hsl(45, 100%, 51%);
+    --yellow-600: hsl(42, 100%, 50%);
+    --yellow-700: hsl(38, 100%, 50%);
+    --yellow-800: hsl(34, 100%, 50%);
+    --yellow-900: hsl(26, 100%, 50%);
+
+    /* Blue */
+    --blue-50: hsl(205, 87%, 94%);
+    --blue-100: hsl(207, 89%, 86%);
+    --blue-200: hsl(207, 90%, 77%);
+    --blue-300: hsl(207, 89%, 68%);
+    --blue-400: hsl(207, 90%, 61%);
+    --blue-500: hsl(207, 90%, 54%);
+    --blue-600: hsl(208, 79%, 51%);
+    --blue-700: hsl(210, 79%, 46%); /* white */
+    --blue-800: hsl(212, 80%, 42%);
+    --blue-900: hsl(216, 85%, 34%);
+
+    /* Green */
+    --green-50: hsl(125, 39%, 94%);
+    --green-100: hsl(122, 38%, 84%);
+    --green-200: hsl(122, 37%, 74%);
+    --green-300: hsl(123, 38%, 64%);
+    --green-400: hsl(123, 38%, 57%);
+    --green-500: hsl(122, 39%, 49%);
+    --green-600: hsl(123, 41%, 45%);
+    --green-700: hsl(123, 43%, 39%);
+    --green-800: hsl(123, 46%, 34%); /* white */
+    --green-900: hsl(124, 55%, 24%);
+
+    /* Red */
+    --red-50: hsl(351, 100%, 96%);
+    --red-100: hsl(354, 100%, 90%);
+    --red-200: hsl(0, 73%, 77%);
+    --red-300: hsl(0, 69%, 67%);
+    --red-400: hsl(1, 83%, 63%);
+    --red-500: hsl(4, 90%, 58%);
+    --red-600: hsl(1, 77%, 55%);
+    --red-700: hsl(0, 65%, 51%); /* white */
+    --red-800: hsl(0, 66%, 47%);
+    --red-900: hsl(0, 73%, 41%);
+
+    /* Gray */
+    --gray-50: hsl(0, 0%, 98%);
+    --gray-100: hsl(0, 0%, 92%);
+    --gray-150: hsl(0, 0%, 80%);
+    --gray-200: hsl(0, 0%, 70%);
+    --gray-250: hsl(0, 0%, 60%);
+    --gray-300: hsl(0, 0%, 45%);
+    --gray-350: hsl(0, 0%, 35%);
+    --gray-400: hsl(0, 0%, 28%);
+    --gray-450: hsl(0, 0%, 22%);
+    --gray-500: hsl(0, 0%, 21%);
+    --gray-550: hsl(0, 0%, 20%);
+    --gray-600: hsl(0, 0%, 18%);
+    --gray-650: hsl(0, 0%, 17%);
+    --gray-700: hsl(0, 0%, 15%);
+    --gray-750: hsl(0, 0%, 14%);
+    --gray-800: hsl(0, 0%, 13%);
+    --gray-850: hsl(0, 0%, 11%);
+    --gray-900: hsl(0, 0%, 7%);
+
+    --0dp: var(--gray-900);
+    --01dp: var(--gray-850);
+    --02dp: var(--gray-800);
+    --03dp: var(--gray-750);
+    --04dp: var(--gray-700);
+    --06dp: var(--gray-650);
+    --08dp: var(--gray-600);
+    --12dp: var(--gray-550);
+    --16dp: var(--gray-500);
+    --24dp: var(--gray-450);
+
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --red: var(--red-500);
+    --orange: hsl(33, 100%, 49%);
+    --yellow: var(--yellow-400);
+    --green: var(--green-500);
+    --teal: hsl(174, 63%, 40%);
+    --blue: var(--blue-500);
+    --purple: hsl(291, 64%, 42%);
+    --pink: hsl(340, 82%, 59%);
+
+    --primary: var(--blue-200);
+    --primary-rgb: 144, 202, 249;
+    --on-primary: var(--blue-900);
+    --primary-variant: var(--blue-900);
+    --primary-variant-rgb: 13, 71, 161;
+    --on-primary-variant: var(--blue-100);
+
+    --container: var(--blue-700);
+    --on-container: var(--blue-100);
+
+    --error: var(--red-200);
+    --error-rgb: 239, 154, 154;
+    --on-error: hsl(0, 76%, 23%);
+    --error-variant: var(--red-900);
+    --error-variant-rgb: 183, 28, 28;
+    --on-error-variant: var(--red-100);
+
+    --warning: var(--yellow-200);
+    --warning-rgb: 255, 238, 88;
+    --on-warning: hsl(44, 100%, 20%);
+    --warning-variant: var(--yellow-900);
+    --warning-variant-rgb: 245, 127, 23;
+    --on-warning-variant: var(--yellow-100);
+
+    --success: var(--green-200);
+    --success-rgb: 129, 199, 132;
+    --on-success: hsl(120, 100%, 10%);
+    --success-variant: var(--green-900);
+    --success-variant-rgb: 27, 94, 32;
+    --on-success-variant: var(--green-100);
+
+    --font: 'Not Sans', sans-serif;
+    --text-color: var(--white);
+    --text-secondary-color: var(--gray-200);
+
+    --h1: bold 1.125rem/1.4em var(--font);
+    --h2: bold 1rem/1.4em var(--font);
+    --p: 1rem/1.4em var(--font);
+    --p2: 0.875rem/1.4em var(--font);
+
+    --border-radius: 10px;
+    --navbar-height: 44px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--0dp);
+}
+
+.container-fluid {
+    overflow: auto;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.rounded {
+    border-radius: var(--border-radius);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Scrollbars */
+
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--0dp);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: var(--gray-700);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--gray-800);
+}
+
+/* Typography */
+* {
+    font-family: 'Noto Sans', 'sans-serif', system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+    font-synthesis: none;
+    color: var(--text-color);
+}
+
+h1,
+.bolder {
+    font: var(--h1);
+}
+
+h2,
+.bold {
+    font: var(--h2);
+}
+
+p,
+a,
+.regular {
+    font: var(--p);
+}
+
+.light {
+    font: var(--p2);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.t-normal {
+    color: var(--text-color);
+}
+
+.t-secondary {
+    color: var(--text-secondary-color);
+}
+
+.t-primary {
+    color: var(--on-primary);
+}
+
+.t-primary-variant {
+    color: var(--on-primary-variant);
+}
+
+.t-error {
+    color: var(--on-error);
+}
+
+.t-error-variant {
+    color: var(--on-error-variant);
+}
+
+.t-warning {
+    color: var(--on-warning);
+}
+
+.t-warning-variant {
+    color: var(--on-warning-variant);
+}
+
+.t-success {
+    color: var(--on-success);
+}
+
+.t-success-variant {
+    color: var(--on-success-variant);
+}

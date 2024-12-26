@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: NoteWise
+
+  datasource:
+    url: jdbc:sqlite:notewise.db
+    driver-class-name: org.sqlite.JDBC
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    database: default
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+
+server:
+  port: 8080
+jwt:
+  secret: ${JWT_SECRET}
